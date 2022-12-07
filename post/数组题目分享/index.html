@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>c语言题目分享 // 我是你李哥</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mr li" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.0fb49e70a30412f97ddfc418e18fefef1d9fcdebe45f634dbbba768b00fe1eec.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="c语言题目分享"/>
+<meta name="twitter:description" content="数字统计一 请你写一段程序，统计各类数字的占比。
+提示：输出%时需要用%%才能输出。 输入格式: 只有一行，为用空格分隔的若干整数，最后一个整数为0。测试用例保证输入中只包含这一个0。
+输出格式: 共三行，依次分别输出3、5、7的倍数的占比（如果某个数同时为多个数的倍数，如15，70等，则不参与统计，但要计到总数中）。占比采用百分数形式，且保留2位小数。这里的占比指的是这类数字的数量跟所有数字的总数（不包括最后的0）比。测试用例保证所有整数可以用int存储。
+输入样例: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0
+输出样例: 25.00% 15.00% 10.00%"/>
+
+    <meta property="og:title" content="c语言题目分享" />
+<meta property="og:description" content="数字统计一 请你写一段程序，统计各类数字的占比。
+提示：输出%时需要用%%才能输出。 输入格式: 只有一行，为用空格分隔的若干整数，最后一个整数为0。测试用例保证输入中只包含这一个0。
+输出格式: 共三行，依次分别输出3、5、7的倍数的占比（如果某个数同时为多个数的倍数，如15，70等，则不参与统计，但要计到总数中）。占比采用百分数形式，且保留2位小数。这里的占比指的是这类数字的数量跟所有数字的总数（不包括最后的0）比。测试用例保证所有整数可以用int存储。
+输入样例: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0
+输出样例: 25.00% 15.00% 10.00%" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yourenADS.github.io/post/%E6%95%B0%E7%BB%84%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-07T18:20:00+08:00" />
+<meta property="article:modified_time" content="2022-12-07T18:20:00+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://yourenADS.github.io"><img class="app-header-avatar" src="" alt="Mr li" /></a>
+      <span class="app-header-title">我是你李哥</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="https://auth.bupt.edu.cn/">我猜你会喜欢的（dog)</a>
+              - -  
+          
+          <a class="app-header-menu-item" href="https://avgle.com">还有一个哦 在没人的时候看（dog)</a>
+              - -  
+          
+          <a class="app-header-menu-item" href="/about/">link3</a>
+      </nav>
+      <p>我是你爸爸呀，你是我儿子</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/yourenADS" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">c语言题目分享</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 7, 2022
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="数字统计一">数字统计一</h1>
+<p>请你写一段程序，统计各类数字的占比。</p>
+<p>提示：输出%时需要用%%才能输出。
+输入格式:
+只有一行，为用空格分隔的若干整数，最后一个整数为0。测试用例保证输入中只包含这一个0。</p>
+<p>输出格式:
+共三行，依次分别输出3、5、7的倍数的占比（如果某个数同时为多个数的倍数，如15，70等，则不参与统计，但要计到总数中）。占比采用百分数形式，且保留2位小数。这里的占比指的是这类数字的数量跟所有数字的总数（不包括最后的0）比。测试用例保证所有整数可以用int存储。</p>
+<h2 id="输入样例">输入样例:</h2>
+<p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0</p>
+<h2 id="输出样例">输出样例:</h2>
+<p>25.00%
+15.00%
+10.00%</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我是你李哥</title>
+    <link>https://yourenADS.github.io/</link>
+    <description>Recent content on 我是你李哥</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 07 Dec 2022 18:30:53 +0800</lastBuildDate><atom:link href="https://yourenADS.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>题目分享2</title>
+      <link>https://yourenADS.github.io/post/%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB2/</link>
+      <pubDate>Wed, 07 Dec 2022 18:30:53 +0800</pubDate>
+      
+      <guid>https://yourenADS.github.io/post/%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB2/</guid>
+      <description>双11优惠 双十一快到了，网上的各个商家纷纷推出各种优惠活动，某商家的优惠方式为满100减30，满200减70，满300减110，满400减160。
+请你写一段程序，根据给定条件，计算用户某单实际该付多少钱。
+输入格式: 第一行为一个整数t代表测试数据组数。
+后边是t行测试数据，每行均为若干个用空格分隔的整数，其中第一个整数为n，代表用户买的商品的个数，后边为n个正整数，分别代表这n件商品的价格。
+输出格式 为t行，每行依次对应输入的t行测试数据用户实际付钱的计算结果。测试用例保证所有整数（包括求和的结果）可以用int存储。
+输入样例: 2 4 10 20 30 40 5 10 20 30 40 50
+输出样例： 70 120</description>
+    </item>
+    
+    <item>
+      <title>本人解答分享</title>
+      <link>https://yourenADS.github.io/post/%E6%9C%AC%E4%BA%BA%E8%A7%A3%E7%AD%94%E5%88%86%E4%BA%AB/</link>
+      <pubDate>Wed, 07 Dec 2022 18:28:57 +0800</pubDate>
+      
+      <guid>https://yourenADS.github.io/post/%E6%9C%AC%E4%BA%BA%E8%A7%A3%E7%AD%94%E5%88%86%E4%BA%AB/</guid>
+      <description>#include&amp;lt;stdio.h&amp;gt; int main() { int n; double a=0,b=0,c=0,d=0; scanf(&amp;quot;%d&amp;quot;,&amp;amp;n); while(n!=0) {if(n%3==0&amp;amp;&amp;amp;n%5!=0&amp;amp;&amp;amp;n%7!=0) a++; if(n%5==0&amp;amp;&amp;amp;n%3!=0&amp;amp;&amp;amp;n%7!=0) b++; if(n%7==0&amp;amp;&amp;amp;n%3!=0&amp;amp;&amp;amp;n%5!=0) c++; d++; scanf(&amp;quot;%d&amp;quot;,&amp;amp;n); } printf(&amp;quot;%.2lf%%\n&amp;quot;,a/d100); printf(&amp;quot;%.2lf%%\n&amp;quot;,b/d100); printf(&amp;quot;%.2lf%%\n&amp;quot;,c/d*100); return 0; }</description>
+    </item>
+    
+    <item>
+      <title>c语言题目分享</title>
+      <link>https://yourenADS.github.io/post/%E6%95%B0%E7%BB%84%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB/</link>
+      <pubDate>Wed, 07 Dec 2022 18:20:00 +0800</pubDate>
+      
+      <guid>https://yourenADS.github.io/post/%E6%95%B0%E7%BB%84%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB/</guid>
+      <description>数字统计一 请你写一段程序，统计各类数字的占比。
+提示：输出%时需要用%%才能输出。 输入格式: 只有一行，为用空格分隔的若干整数，最后一个整数为0。测试用例保证输入中只包含这一个0。
+输出格式: 共三行，依次分别输出3、5、7的倍数的占比（如果某个数同时为多个数的倍数，如15，70等，则不参与统计，但要计到总数中）。占比采用百分数形式，且保留2位小数。这里的占比指的是这类数字的数量跟所有数字的总数（不包括最后的0）比。测试用例保证所有整数可以用int存储。
+输入样例: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0
+输出样例: 25.00% 15.00% 10.00%</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://yourenADS.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yourenADS.github.io/about/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia lorem quis sodales auctor. Donec bibendum odio leo, bibendum iaculis lectus dapibus sit amet. Etiam ut euismod lectus, vel finibus metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer quis vestibulum justo. Duis scelerisque ullamcorper sem, eget congue lorem ultrices mattis. Nam ut mollis tellus, id facilisis turpis. Duis ac egestas mi, a mattis dolor. Curabitur vestibulum est nec tortor hendrerit, vehicula malesuada quam tempor.</description>
+    </item>
+    
+  </channel>
+</rss>
