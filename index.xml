@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://yourenADS/yourenADS.github.io/</link>
+    <link>http://yourenADS/.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Sep 2024 21:17:37 +0800</lastBuildDate>
-    <atom:link href="http://yourenADS/yourenADS.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://yourenADS/.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OS</title>
-      <link>http://yourenADS/yourenADS.github.io/post/blog/</link>
+      <link>http://yourenADS/.github.io/post/blog/</link>
       <pubDate>Sun, 15 Sep 2024 21:17:37 +0800</pubDate>
-      <guid>http://yourenADS/yourenADS.github.io/post/blog/</guid>
+      <guid>http://yourenADS/.github.io/post/blog/</guid>
       <description>&lt;h1 id=&#34;hello&#34;&gt;hello&lt;/h1&gt;&#xA;&lt;p&gt;this is my first blog&lt;/p&gt;</description>
     </item>
   </channel>
