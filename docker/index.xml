@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on </title>
+    <link>https://yourenADS.github.io/docker/</link>
+    <description>Recent content in Docker on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2024 14:36:05 +0800</lastBuildDate>
+    <atom:link href="https://yourenADS.github.io/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://yourenADS.github.io/docker/docker/</link>
+      <pubDate>Mon, 16 Sep 2024 14:36:05 +0800</pubDate>
+      <guid>https://yourenADS.github.io/docker/docker/</guid>
+      <description>&lt;h2 id=&#34;什么是docker&#34;&gt;什么是docker&lt;/h2&gt;&#xA;&lt;p&gt;docker 帮助我们一致地构建，运行并且交付我们的应用程序&lt;/p&gt;&#xA;&lt;p&gt;解决由于环境影响使得应用程序在不同的计算机之上不能运行的类似问题&lt;/p&gt;&#xA;&lt;h2 id=&#34;虚拟机与容器containers&#34;&gt;虚拟机与容器(Containers)&lt;/h2&gt;&#xA;&lt;p&gt;容器container&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;运行应用程序的独立隔离的环境，&lt;/li&gt;&#xA;&lt;li&gt;更加的轻量级，&lt;/li&gt;&#xA;&lt;li&gt;整个主机都用一个操作系统&lt;/li&gt;&#xA;&lt;li&gt;启动便捷快速&lt;/li&gt;&#xA;&lt;li&gt;需要更少的硬件资源&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;virtual Machine 虚拟机&#xA;对于机器以及物理硬件的抽象，比如在windows系统之下凭借虚拟机我们可以使用linux虚拟机(通过VMware等虚拟管理程序)&#xA;每个主机可以有多个虚拟机,但是其环境不同&lt;/p&gt;&#xA;&lt;p&gt;问题:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每一个虚拟机都有一个完整的操作系统&lt;/li&gt;&#xA;&lt;li&gt;启动十分缓慢&lt;/li&gt;&#xA;&lt;li&gt;资源会很紧张，占用CPU以及内存&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;docker-架构&#34;&gt;docker 架构&lt;/h2&gt;&#xA;&lt;p&gt;docker使用用户-服务器模式，所以它有一个客户端组件,来与服务器(docker engine, 运行在后端，用于构建并且运行docker容器)通信&lt;/p&gt;&#xA;&lt;p&gt;由于容器并不含有整个操作系统，所以它共享主机的内核，由于Windows自带windows以及linux内核，我们可以子啊windows上本地运行linux应用程序，windows容器共享windows内核，linux容器共享linux内核&lt;/p&gt;&#xA;&lt;p&gt;docker 将程序和环境一起打包成镜像，所谓的容器实际就是进程。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

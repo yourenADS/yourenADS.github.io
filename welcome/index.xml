@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on </title>
+    <link>https://yourenADS.github.io/welcome/</link>
+    <description>Recent content in Welcome on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2024 11:04:25 +0800</lastBuildDate>
+    <atom:link href="https://yourenADS.github.io/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>https://yourenADS.github.io/welcome/welcome/</link>
+      <pubDate>Mon, 16 Sep 2024 11:04:25 +0800</pubDate>
+      <guid>https://yourenADS.github.io/welcome/welcome/</guid>
+      <description>&lt;h1 id=&#34;你好&#34;&gt;你好&lt;/h1&gt;&#xA;&lt;p&gt;很高兴与你相遇&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

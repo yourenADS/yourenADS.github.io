@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Os on </title>
+    <link>https://yourenADS.github.io/os/</link>
+    <description>Recent content in Os on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2024 11:35:01 +0800</lastBuildDate>
+    <atom:link href="https://yourenADS.github.io/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一章</title>
+      <link>https://yourenADS.github.io/os/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+      <pubDate>Mon, 16 Sep 2024 11:35:01 +0800</pubDate>
+      <guid>https://yourenADS.github.io/os/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
