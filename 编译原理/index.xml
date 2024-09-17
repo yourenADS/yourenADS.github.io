@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编译原理 on </title>
+    <link>https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 编译原理 on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Sep 2024 23:18:32 +0800</lastBuildDate>
+    <atom:link href="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一章 编译概述</title>
+      <link>https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+      <pubDate>Mon, 16 Sep 2024 23:18:32 +0800</pubDate>
+      <guid>https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
+      <description>&lt;h2 id=&#34;翻译和解释&#34;&gt;翻译和解释&lt;/h2&gt;&#xA;&lt;p&gt;面向用户的，面向问题的以及面向对象的语言统称为高级语言。 机器语言和汇编语言为低级语言&lt;/p&gt;&#xA;&lt;p&gt;高级语言编写的程序进行&lt;strong&gt;编译&lt;/strong&gt;过程转为等价的机器语言程序，才能运行。&lt;/p&gt;&#xA;&lt;p&gt;某种高级语言的编译程序加上一些相应的支持用户程序运行的子程序构成了&lt;strong&gt;编译系统&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;翻译程序&#34;&gt;翻译程序&lt;/h3&gt;&#xA;&lt;p&gt;源程序 &amp;ndash;编译程序&amp;ndash;&amp;gt;  目标程序&lt;/p&gt;&#xA;&lt;p&gt;当由高级语言转变为机器语言或者汇编语言，此为&lt;strong&gt;编译程序&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;由汇编语言转为机器语言，此为&lt;strong&gt;汇编程序&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;若直接由源程序执行，给出运行结果，这种翻译器叫做解释器，&lt;strong&gt;解释程序&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;由于有些解释程序效率低，还有一种更有效的方法，就是先用编译程序转为中间代码表示形式，再进行解释程序(伪代码解释器)&lt;/p&gt;&#xA;&lt;h2 id=&#34;编译的阶段和任务&#34;&gt;编译的阶段和任务&lt;/h2&gt;&#xA;&lt;p&gt;编译的过程可以分为分析阶段和综合阶段&lt;/p&gt;&#xA;&lt;h3 id=&#34;分析阶段&#34;&gt;分析阶段&lt;/h3&gt;&#xA;&lt;p&gt;分析阶段根据源语言的定义对源程序进行结构分析和语义分析，从而将程序正文转换为某种中间表示形式&lt;/p&gt;&#xA;&lt;p&gt;编译程序需要定义&lt;strong&gt;数据结构&lt;/strong&gt;（符号表）来保存再分析过程之中识别出来的标识符和有关信息，为语义分析和代码生成提供支持&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://yourenADS.github.io/images/image.png&#34; alt=&#34;编译原理的组成&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;1词法分析&#34;&gt;1，词法分析&lt;/h4&gt;&#xA;&lt;p&gt;词法分析是一种线性分析，再扫描源程序时，将字符串分解为单词，再进行转换为记号输出。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Pascal&#34; data-lang=&#34;Pascal&#34;&gt;total:=total+rate*4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;将分为7个单独的单词&lt;/p&gt;&#xA;&lt;p&gt;除此之外，词法分析对某些记号还要增加一个属性值来区分。&lt;/p&gt;&#xA;&lt;p&gt;发现total，产生id，将total放入符号表，id的属性值就是指向total的指针&lt;/p&gt;&#xA;&lt;h4 id=&#34;2语法分析&#34;&gt;2，语法分析&lt;/h4&gt;&#xA;&lt;p&gt;语法分析根据原语言的语法结构，将记号流按层次分组，形成短语&lt;/p&gt;&#xA;&lt;p&gt;表达式定义如下&#xA;&lt;img src=&#34;https://yourenADS.github.io/images/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95.png&#34; alt=&#34;表达式语法&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;源程序的语法短语常用分析树来表示&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://yourenADS.github.io/images/%E5%88%86%E6%9E%90%E6%A0%91.png&#34; alt=&#34;分析树&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;3语义分析&#34;&gt;3，语义分析&lt;/h4&gt;&#xA;&lt;p&gt;一个重要任务是类型检查，检查源程序之中每个语法成分的类型是否合乎要求。如运算对象类型，数组下标变量等等&lt;/p&gt;&#xA;&lt;h3 id=&#34;综合阶段&#34;&gt;综合阶段&lt;/h3&gt;&#xA;&lt;p&gt;主要分为 中间代码生成，代码优化以及目标代码生成三个步骤&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://yourenADS.github.io/images/%E7%BB%BC%E5%90%88%E9%98%B6%E6%AE%B5.png&#34; alt=&#34;综合阶段&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

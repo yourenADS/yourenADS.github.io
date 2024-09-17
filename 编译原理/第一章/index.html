@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Yourenads - Docker</title>
-<meta property="og:title" content=Yourenads&#32;-&#32;Docker />
-<meta name="twitter:title" content=Yourenads&#32;-&#32;Docker />
-<meta itemprop="name" content=Yourenads&#32;-&#32;Docker />
-<meta name="application-name" content=Yourenads&#32;-&#32;Docker />
+<title itemprop="name">Yourenads - 第一章 编译概述</title>
+<meta property="og:title" content=Yourenads&#32;-&#32;第一章&#32;编译概述 />
+<meta name="twitter:title" content=Yourenads&#32;-&#32;第一章&#32;编译概述 />
+<meta itemprop="name" content=Yourenads&#32;-&#32;第一章&#32;编译概述 />
+<meta name="application-name" content=Yourenads&#32;-&#32;第一章&#32;编译概述 />
 <meta property="og:site_name" content="" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://yourenADS.github.io/docker/docker/" />
-<link rel="canonical" href="https://yourenADS.github.io/docker/docker/" itemprop="url" />
-<meta name="url" content="https://yourenADS.github.io/docker/docker/" />
-<meta name="twitter:url" content="https://yourenADS.github.io/docker/docker/" />
-<meta property="og:url" content="https://yourenADS.github.io/docker/docker/" />
+<base href="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/" />
+<link rel="canonical" href="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/" itemprop="url" />
+<meta name="url" content="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/" />
+<meta name="twitter:url" content="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/" />
+<meta property="og:url" content="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/" />
 
 
-<meta property="og:updated_time" content="2024-09-16T14:36:05&#43;08:00" />
+<meta property="og:updated_time" content="2024-09-16T23:18:32&#43;08:00" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://yourenADS.github.io/sitemap.xml' />
@@ -518,14 +518,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://yourenADS.github.io/docker/docker/">Docker</a>
+    <a href="https://yourenADS.github.io/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E7%AC%AC%E4%B8%80%E7%AB%A0/">第一章 编译概述</a>
   </h1>
 
   <div class="headline">
     <div>
       
       
-      <time datetime=" 2024-09-16T14:36:05&#43;0800" class="post-date">
+      <time datetime=" 2024-09-16T23:18:32&#43;0800" class="post-date">
         September 16, 2024
       </time>
       
@@ -548,31 +548,39 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-  <h2 id="什么是docker">什么是docker</h2>
-<p>docker 帮助我们一致地构建，运行并且交付我们的应用程序</p>
-<p>解决由于环境影响使得应用程序在不同的计算机之上不能运行的类似问题</p>
-<h2 id="虚拟机与容器containers">虚拟机与容器(Containers)</h2>
-<p>容器container</p>
-<ul>
-<li>运行应用程序的独立隔离的环境，</li>
-<li>更加的轻量级，</li>
-<li>整个主机都用一个操作系统</li>
-<li>启动便捷快速</li>
-<li>需要更少的硬件资源</li>
-</ul>
-<p>virtual Machine 虚拟机
-对于机器以及物理硬件的抽象，比如在windows系统之下凭借虚拟机我们可以使用linux虚拟机(通过VMware等虚拟管理程序)
-每个主机可以有多个虚拟机,但是其环境不同</p>
-<p>问题:</p>
-<ul>
-<li>每一个虚拟机都有一个完整的操作系统</li>
-<li>启动十分缓慢</li>
-<li>资源会很紧张，占用CPU以及内存</li>
-</ul>
-<h2 id="docker-架构">docker 架构</h2>
-<p>docker使用用户-服务器模式，所以它有一个客户端组件,来与服务器(docker engine, 运行在后端，用于构建并且运行docker容器)通信</p>
-<p>由于容器并不含有整个操作系统，所以它共享主机的内核，由于Windows自带windows以及linux内核，我们可以子啊windows上本地运行linux应用程序，windows容器共享windows内核，linux容器共享linux内核</p>
-<p>docker 将程序和环境一起打包成镜像，所谓的容器实际就是进程。</p>
+  <h2 id="翻译和解释">翻译和解释</h2>
+<p>面向用户的，面向问题的以及面向对象的语言统称为高级语言。 机器语言和汇编语言为低级语言</p>
+<p>高级语言编写的程序进行<strong>编译</strong>过程转为等价的机器语言程序，才能运行。</p>
+<p>某种高级语言的编译程序加上一些相应的支持用户程序运行的子程序构成了<strong>编译系统</strong></p>
+<h3 id="翻译程序">翻译程序</h3>
+<p>源程序 &ndash;编译程序&ndash;&gt;  目标程序</p>
+<p>当由高级语言转变为机器语言或者汇编语言，此为<strong>编译程序</strong></p>
+<p>由汇编语言转为机器语言，此为<strong>汇编程序</strong></p>
+<p>若直接由源程序执行，给出运行结果，这种翻译器叫做解释器，<strong>解释程序</strong></p>
+<p>由于有些解释程序效率低，还有一种更有效的方法，就是先用编译程序转为中间代码表示形式，再进行解释程序(伪代码解释器)</p>
+<h2 id="编译的阶段和任务">编译的阶段和任务</h2>
+<p>编译的过程可以分为分析阶段和综合阶段</p>
+<h3 id="分析阶段">分析阶段</h3>
+<p>分析阶段根据源语言的定义对源程序进行结构分析和语义分析，从而将程序正文转换为某种中间表示形式</p>
+<p>编译程序需要定义<strong>数据结构</strong>（符号表）来保存再分析过程之中识别出来的标识符和有关信息，为语义分析和代码生成提供支持</p>
+<p><img src="/images/image.png" alt="编译原理的组成"></p>
+<h4 id="1词法分析">1，词法分析</h4>
+<p>词法分析是一种线性分析，再扫描源程序时，将字符串分解为单词，再进行转换为记号输出。</p>
+<pre tabindex="0"><code class="language-Pascal" data-lang="Pascal">total:=total+rate*4
+</code></pre><p>将分为7个单独的单词</p>
+<p>除此之外，词法分析对某些记号还要增加一个属性值来区分。</p>
+<p>发现total，产生id，将total放入符号表，id的属性值就是指向total的指针</p>
+<h4 id="2语法分析">2，语法分析</h4>
+<p>语法分析根据原语言的语法结构，将记号流按层次分组，形成短语</p>
+<p>表达式定义如下
+<img src="/images/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95.png" alt="表达式语法"></p>
+<p>源程序的语法短语常用分析树来表示</p>
+<p><img src="/images/%E5%88%86%E6%9E%90%E6%A0%91.png" alt="分析树"></p>
+<h4 id="3语义分析">3，语义分析</h4>
+<p>一个重要任务是类型检查，检查源程序之中每个语法成分的类型是否合乎要求。如运算对象类型，数组下标变量等等</p>
+<h3 id="综合阶段">综合阶段</h3>
+<p>主要分为 中间代码生成，代码优化以及目标代码生成三个步骤</p>
+<p><img src="/images/%E7%BB%BC%E5%90%88%E9%98%B6%E6%AE%B5.png" alt="综合阶段"></p>
 
   
   <hr>
@@ -593,9 +601,17 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#什么是docker">什么是docker</a></li>
-    <li><a href="#虚拟机与容器containers">虚拟机与容器(Containers)</a></li>
-    <li><a href="#docker-架构">docker 架构</a></li>
+    <li><a href="#翻译和解释">翻译和解释</a>
+      <ul>
+        <li><a href="#翻译程序">翻译程序</a></li>
+      </ul>
+    </li>
+    <li><a href="#编译的阶段和任务">编译的阶段和任务</a>
+      <ul>
+        <li><a href="#分析阶段">分析阶段</a></li>
+        <li><a href="#综合阶段">综合阶段</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>

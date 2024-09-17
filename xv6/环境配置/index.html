@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Yourenads - Docker</title>
-<meta property="og:title" content=Yourenads&#32;-&#32;Docker />
-<meta name="twitter:title" content=Yourenads&#32;-&#32;Docker />
-<meta itemprop="name" content=Yourenads&#32;-&#32;Docker />
-<meta name="application-name" content=Yourenads&#32;-&#32;Docker />
+<title itemprop="name">Yourenads - 环境配置</title>
+<meta property="og:title" content=Yourenads&#32;-&#32;环境配置 />
+<meta name="twitter:title" content=Yourenads&#32;-&#32;环境配置 />
+<meta itemprop="name" content=Yourenads&#32;-&#32;环境配置 />
+<meta name="application-name" content=Yourenads&#32;-&#32;环境配置 />
 <meta property="og:site_name" content="" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://yourenADS.github.io/docker/docker/" />
-<link rel="canonical" href="https://yourenADS.github.io/docker/docker/" itemprop="url" />
-<meta name="url" content="https://yourenADS.github.io/docker/docker/" />
-<meta name="twitter:url" content="https://yourenADS.github.io/docker/docker/" />
-<meta property="og:url" content="https://yourenADS.github.io/docker/docker/" />
+<base href="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" />
+<link rel="canonical" href="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" itemprop="url" />
+<meta name="url" content="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" />
+<meta name="twitter:url" content="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" />
+<meta property="og:url" content="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" />
 
 
-<meta property="og:updated_time" content="2024-09-16T14:36:05&#43;08:00" />
+<meta property="og:updated_time" content="2024-09-17T16:45:12&#43;08:00" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://yourenADS.github.io/sitemap.xml' />
@@ -518,15 +518,15 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://yourenADS.github.io/docker/docker/">Docker</a>
+    <a href="https://yourenADS.github.io/xv6/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a>
   </h1>
 
   <div class="headline">
     <div>
       
       
-      <time datetime=" 2024-09-16T14:36:05&#43;0800" class="post-date">
-        September 16, 2024
+      <time datetime=" 2024-09-17T16:45:12&#43;0800" class="post-date">
+        September 17, 2024
       </time>
       
       <span> - </span>
@@ -548,37 +548,44 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-  <h2 id="什么是docker">什么是docker</h2>
-<p>docker 帮助我们一致地构建，运行并且交付我们的应用程序</p>
-<p>解决由于环境影响使得应用程序在不同的计算机之上不能运行的类似问题</p>
-<h2 id="虚拟机与容器containers">虚拟机与容器(Containers)</h2>
-<p>容器container</p>
+  <h2 id="docker-配置环境">docker 配置环境</h2>
+<p>也可以使用虚拟机来配置环境，由于docker可以直接在本机上进行修改比较方便</p>
+<h3 id="配置流程">配置流程</h3>
 <ul>
-<li>运行应用程序的独立隔离的环境，</li>
-<li>更加的轻量级，</li>
-<li>整个主机都用一个操作系统</li>
-<li>启动便捷快速</li>
-<li>需要更少的硬件资源</li>
+<li>首先git clone lab文件</li>
 </ul>
-<p>virtual Machine 虚拟机
-对于机器以及物理硬件的抽象，比如在windows系统之下凭借虚拟机我们可以使用linux虚拟机(通过VMware等虚拟管理程序)
-每个主机可以有多个虚拟机,但是其环境不同</p>
-<p>问题:</p>
-<ul>
-<li>每一个虚拟机都有一个完整的操作系统</li>
-<li>启动十分缓慢</li>
-<li>资源会很紧张，占用CPU以及内存</li>
-</ul>
-<h2 id="docker-架构">docker 架构</h2>
-<p>docker使用用户-服务器模式，所以它有一个客户端组件,来与服务器(docker engine, 运行在后端，用于构建并且运行docker容器)通信</p>
-<p>由于容器并不含有整个操作系统，所以它共享主机的内核，由于Windows自带windows以及linux内核，我们可以子啊windows上本地运行linux应用程序，windows容器共享windows内核，linux容器共享linux内核</p>
-<p>docker 将程序和环境一起打包成镜像，所谓的容器实际就是进程。</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">git clone git://g.csail.mit.edu/xv6-labs-2022
+</code></pre><p>然后在项目目录之中，书写dockerfile文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># 使用一个基础镜像，例如 Ubuntu</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ubuntu:latest</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># 设置环境变量以避免交互式提示</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> DEBIAN_FRONTEND<span style="color:#f92672">=</span>noninteractive
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">RUN</span> apt-get update<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get -y install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># 创建工作目录</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># 将本地文件复制到容器中</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /app<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>由于docker相当于将代码与环境一起打包成了一个镜像，即img文件，这样我们直接用img文件运行我们的项目(所谓的容器实际上就是进程而已)</p>
+<p>随后运行docker命令生成img文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>docker build -t xv6-labs<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>这样我们就生成了名为xv6-labs的镜像</p>
+<p>当我们想要进行make时，即可运行</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>docker run -v  .:/app -it xv6-labs<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>来运行一个容器，以命令行的模式，在app目录之中操作我们的项目，我们的环境就搭好了</p>
 
   
   <hr>
 <div class="footer">
     
 	    
+            <a class="previous-post" href="https://yourenADS.github.io/xv6/lab_1/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Lab_1</a>
+        
 	    
     
 </div>
@@ -593,9 +600,11 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#什么是docker">什么是docker</a></li>
-    <li><a href="#虚拟机与容器containers">虚拟机与容器(Containers)</a></li>
-    <li><a href="#docker-架构">docker 架构</a></li>
+    <li><a href="#docker-配置环境">docker 配置环境</a>
+      <ul>
+        <li><a href="#配置流程">配置流程</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
