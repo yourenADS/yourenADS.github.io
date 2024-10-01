@@ -47,20 +47,20 @@
 
 
 
-  
-  
-  
 
 
+  
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Yourenads - Os</title>
-<meta property="og:title" content=Yourenads&#32;-&#32;Os />
-<meta name="twitter:title" content=Yourenads&#32;-&#32;Os />
-<meta itemprop="name" content=Yourenads&#32;-&#32;Os />
-<meta name="application-name" content=Yourenads&#32;-&#32;Os />
+<title itemprop="name">Yourenads - 第二章 操作系统结构</title>
+<meta property="og:title" content=Yourenads&#32;-&#32;第二章&#32;操作系统结构 />
+<meta name="twitter:title" content=Yourenads&#32;-&#32;第二章&#32;操作系统结构 />
+<meta itemprop="name" content=Yourenads&#32;-&#32;第二章&#32;操作系统结构 />
+<meta name="application-name" content=Yourenads&#32;-&#32;第二章&#32;操作系统结构 />
 <meta property="og:site_name" content="" />
 
 
@@ -70,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://yourenADS.github.io/os/" />
-<link rel="canonical" href="https://yourenADS.github.io/os/" itemprop="url" />
-<meta name="url" content="https://yourenADS.github.io/os/" />
-<meta name="twitter:url" content="https://yourenADS.github.io/os/" />
-<meta property="og:url" content="https://yourenADS.github.io/os/" />
+<base href="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" />
+<link rel="canonical" href="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" itemprop="url" />
+<meta name="url" content="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" />
+<meta name="twitter:url" content="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" />
+<meta property="og:url" content="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" />
 
 
 <meta property="og:updated_time" content="2024-10-01T10:38:35&#43;08:00" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://yourenADS.github.io/sitemap.xml' />
-<link href="https://yourenADS.github.io/os/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -516,34 +515,126 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Os</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/">第二章 操作系统结构</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2024-10-01T10:38:35&#43;0800" class="post-date">
+        October 1, 2024
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
     
-        <h3 style="text-align: center;">2024</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/">第二章 操作系统结构</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">October 1, 2024</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/os/%E7%AC%AC%E4%B8%80%E7%AB%A0/">第一章</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">September 16, 2024</time>
-                </span>
-            </li>
-        
-    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <p>本章目标:</p>
+<ul>
+<li>描述操作系统为用户，进程和其他系统提供的服务</li>
+<li>讨论构建操作系统的各种方式</li>
+<li>解释如何安装与定制操作系统以及如何启动操作系统</li>
+</ul>
+<h2 id="操作系统的服务">操作系统的服务</h2>
+<p>用于提供用户功能的服务:</p>
+<ul>
+<li>用户界面(user interface)  可以是多种形式，如命令行界面，批处理界面，图形化界面</li>
+<li>程序的执行</li>
+<li>I/O操作。用户不能直接控制I/O设备，需要操作系统控制</li>
+<li>文件系统操作。让用户能访问，创建，删除文件</li>
+<li>通信。不同进程之间（可以是不同计算机之间）。实现共享内存以及信息交换</li>
+<li>错误检测</li>
+</ul>
+<p>用于确保系统本身运行高效（多用户共享计算机资源变得高效）的服务</p>
+<ul>
+<li>资源分配。多个用户或者多个作业同时运行，需要进行资源分配</li>
+<li>记账。记录用户使用的资源的类型和数量，</li>
+<li>保护与安全。</li>
+</ul>
+<h2 id="用户与操作系统的界面">用户与操作系统的界面</h2>
+<h3 id="命令解释程序">命令解释程序</h3>
+<p>有的操作系统内核包括命令解释程序，有的视作特殊的程序，开机即启动</p>
+<p>命令解释程序的主要功能是获取并执行用户指定的下一条命令</p>
+<p>如UNIX之中<code>rm file.txt</code>  打开rm文件将其加载到内存，将file.txt作为参数运行</p>
+<p>用户界面通常不属于系统内核。</p>
+<h2 id="系统调用">系统调用</h2>
+<p>系统调用(system call) 提供操作系统服务接口。
+通常应用程序开发人员根据<strong>应用编程接口</strong>（application programing interface API）来设计程序，即调用一组函数。</p>
+<p>在后台API函数调用实际的系统调用。如windows函数<code>CreatProcess()</code> 调用 <code>NTCreatProgress()</code></p>
+<p>可以理解为系统调用在API函数之中被调用。鉴于系统调用较为复杂难用，一般使用API来设计程序
+系统调用接口截取API函数的调用，并调用操作系统之中的所需系统调用。系统调用接口根据系统调用的相关数字建立索引表，系统调用接口调用系统调用。</p>
+<p>传递参数的方法:</p>
+<ul>
+<li>寄存器传递</li>
+<li>寄存器传递参数所在内存地址</li>
+<li>压入堆栈之中，通过操作系统弹出</li>
+</ul>
+<h2 id="系统调用的类型">系统调用的类型</h2>
+<p>大致分为六类</p>
+<ul>
+<li>进程控制</li>
+<li>文件管理</li>
+<li>设备管理</li>
+<li>信息维护</li>
+<li>通信</li>
+<li>保护</li>
 </ul>
 
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="https://yourenADS.github.io/os/%E7%AC%AC%E4%B8%80%E7%AB%A0/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>第一章</a>
+        
+	    
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#操作系统的服务">操作系统的服务</a></li>
+    <li><a href="#用户与操作系统的界面">用户与操作系统的界面</a>
+      <ul>
+        <li><a href="#命令解释程序">命令解释程序</a></li>
+      </ul>
+    </li>
+    <li><a href="#系统调用">系统调用</a></li>
+    <li><a href="#系统调用的类型">系统调用的类型</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>

@@ -6,8 +6,15 @@
     <description>Recent content in Os on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Sep 2024 11:35:01 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 10:38:35 +0800</lastBuildDate>
     <atom:link href="https://yourenADS.github.io/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二章 操作系统结构</title>
+      <link>https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/</link>
+      <pubDate>Tue, 01 Oct 2024 10:38:35 +0800</pubDate>
+      <guid>https://yourenADS.github.io/os/%E7%AC%AC%E4%BA%8C%E7%AB%A0/</guid>
+      <description>&lt;p&gt;本章目标:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;描述操作系统为用户，进程和其他系统提供的服务&lt;/li&gt;&#xA;&lt;li&gt;讨论构建操作系统的各种方式&lt;/li&gt;&#xA;&lt;li&gt;解释如何安装与定制操作系统以及如何启动操作系统&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;操作系统的服务&#34;&gt;操作系统的服务&lt;/h2&gt;&#xA;&lt;p&gt;用于提供用户功能的服务:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;用户界面(user interface)  可以是多种形式，如命令行界面，批处理界面，图形化界面&lt;/li&gt;&#xA;&lt;li&gt;程序的执行&lt;/li&gt;&#xA;&lt;li&gt;I/O操作。用户不能直接控制I/O设备，需要操作系统控制&lt;/li&gt;&#xA;&lt;li&gt;文件系统操作。让用户能访问，创建，删除文件&lt;/li&gt;&#xA;&lt;li&gt;通信。不同进程之间（可以是不同计算机之间）。实现共享内存以及信息交换&lt;/li&gt;&#xA;&lt;li&gt;错误检测&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;用于确保系统本身运行高效（多用户共享计算机资源变得高效）的服务&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;资源分配。多个用户或者多个作业同时运行，需要进行资源分配&lt;/li&gt;&#xA;&lt;li&gt;记账。记录用户使用的资源的类型和数量，&lt;/li&gt;&#xA;&lt;li&gt;保护与安全。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;用户与操作系统的界面&#34;&gt;用户与操作系统的界面&lt;/h2&gt;&#xA;&lt;h3 id=&#34;命令解释程序&#34;&gt;命令解释程序&lt;/h3&gt;&#xA;&lt;p&gt;有的操作系统内核包括命令解释程序，有的视作特殊的程序，开机即启动&lt;/p&gt;&#xA;&lt;p&gt;命令解释程序的主要功能是获取并执行用户指定的下一条命令&lt;/p&gt;&#xA;&lt;p&gt;如UNIX之中&lt;code&gt;rm file.txt&lt;/code&gt;  打开rm文件将其加载到内存，将file.txt作为参数运行&lt;/p&gt;&#xA;&lt;p&gt;用户界面通常不属于系统内核。&lt;/p&gt;&#xA;&lt;h2 id=&#34;系统调用&#34;&gt;系统调用&lt;/h2&gt;&#xA;&lt;p&gt;系统调用(system call) 提供操作系统服务接口。&#xA;通常应用程序开发人员根据&lt;strong&gt;应用编程接口&lt;/strong&gt;（application programing interface API）来设计程序，即调用一组函数。&lt;/p&gt;&#xA;&lt;p&gt;在后台API函数调用实际的系统调用。如windows函数&lt;code&gt;CreatProcess()&lt;/code&gt; 调用 &lt;code&gt;NTCreatProgress()&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;可以理解为系统调用在API函数之中被调用。鉴于系统调用较为复杂难用，一般使用API来设计程序&#xA;系统调用接口截取API函数的调用，并调用操作系统之中的所需系统调用。系统调用接口根据系统调用的相关数字建立索引表，系统调用接口调用系统调用。&lt;/p&gt;&#xA;&lt;p&gt;传递参数的方法:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;寄存器传递&lt;/li&gt;&#xA;&lt;li&gt;寄存器传递参数所在内存地址&lt;/li&gt;&#xA;&lt;li&gt;压入堆栈之中，通过操作系统弹出&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;系统调用的类型&#34;&gt;系统调用的类型&lt;/h2&gt;&#xA;&lt;p&gt;大致分为六类&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;进程控制&lt;/li&gt;&#xA;&lt;li&gt;文件管理&lt;/li&gt;&#xA;&lt;li&gt;设备管理&lt;/li&gt;&#xA;&lt;li&gt;信息维护&lt;/li&gt;&#xA;&lt;li&gt;通信&lt;/li&gt;&#xA;&lt;li&gt;保护&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>第一章</title>
       <link>https://yourenADS.github.io/os/%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
